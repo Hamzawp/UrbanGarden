@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  "Experience the joy of gardening with Urban Garden - where nature meets technology for a seamless shopping experience!"
+  Experience the joy of gardening with Urban Garden - where nature meets technology for a seamless shopping experience!
   <br />
   <br />
   <a href="#table-of-contents"><b>Explore the docs »</b></a>

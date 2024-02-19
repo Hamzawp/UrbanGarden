@@ -1,0 +1,253 @@
+.testimony_content_homepage {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/testimony_background.jpg");
+  background-size: cover;
+  margin-bottom: 5em;
+  margin-top: 5em;
+}
+
+.testimony_content_homepage .testimony_container {
+  width: 100%;
+  padding: 3em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1ee3;
+}
+
+.testimony_content_homepage .testimony_container .testimony_info {
+  position: relative;
+  width: 100%;
+  max-height: 100%;
+  text-align: center;
+  color: white;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .testimony_title {
+  font-family: Baskerville, Regular;
+  margin: 2.5em 0;
+  width: 100%;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .testimony_title
+  h1 {
+  font-size: 2.5em;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .testimony_map {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  overflow-y: auto;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .testimony_map
+  .testimony_data
+  .text {
+  margin: 1.5em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .testimony_map
+  .testimony_data
+  .text
+  .testimony_description {
+  width: 65em;
+  margin: 0 8em;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .testimony_map
+  .testimony_data
+  .text
+  .testimony_description
+  p {
+  font-size: 1.2em;
+  line-height: 25px;
+  color: rgba(211, 211, 211, 0.8);
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .testimony_map
+  .seperator {
+  margin: 1.5em 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .testimony_map
+  .seperator
+  .horizontal_line {
+  width: 50px;
+  height: 1px;
+  background-color: #dc7236;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .testimony_map
+  .client_name {
+  width: 100%;
+  text-align: center;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .testimony_map
+  .client_name
+  h6 {
+  font-size: 1.12em;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .testimony_map
+  .client_name
+  p {
+  margin: 0.3em 0;
+  font-size: 0.9em;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .testimony_map::-webkit-scrollbar {
+  display: none;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .arrow_container {
+  width: 100%;
+  position: absolute;
+  top: 48%;
+  z-index: 100;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .arrow_container
+  .arrows_wrapper {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .arrow_container
+  .arrow_desktop
+  img {
+  width: 100%;
+  max-width: 3.5em;
+  cursor: pointer;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .arrow_container
+  .arrow_desktop
+  .leftarrowimg {
+  margin-right: 75%;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .arrow_mobile
+  img {
+  margin-top: 4%;
+  width: 100%;
+  max-width: 4em;
+}
+
+.testimony_content_homepage
+  .testimony_container
+  .testimony_info
+  .arrow_mobile
+  .leftarrowimg {
+  margin-right: 5%;
+}
+
+@media (max-width: 600px) {
+  .testimony_content_homepage {
+    height: auto;
+    margin-top: 5em;
+  }
+
+  .testimony_content_homepage .testimony_container {
+    padding-top: 2.5em;
+  }
+
+  .testimony_content_homepage
+    .testimony_container
+    .testimony_info
+    .testimony_map
+    .client_name
+    h6 {
+    font-size: 1.6em;
+    opacity: 0.8;
+    margin-bottom: 0.625em;
+  }
+
+  .testimony_content_homepage
+    .testimony_container
+    .testimony_info
+    .testimony_map
+    .client_name
+    p {
+    font-size: 1.4em;
+    opacity: 0.7;
+  }
+
+  .testimony_content_homepage
+    .testimony_container
+    .testimony_info
+    .testimony_map
+    .testimony_data
+    .text
+    .testimony_description {
+    margin: 0;
+  }
+
+  .testimony_content_homepage
+    .testimony_container
+    .testimony_info
+    .arrows_wrapper {
+    margin: 3em 0 2em;
+  }
+}

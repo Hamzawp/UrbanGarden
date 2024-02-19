@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import "./FooterStyles.css";
 import {
   FaArrowAltCircleRight,
@@ -9,105 +9,101 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-import log from '../../UGbg.png'
-
+import logo from "../../UGbg.png";
 
 const Footer = () => {
   return (
     <>
-      <footer>
-        <div className="footer-top">
-          <div className="brand">
-            <div className="brandlogo">
-              <img src={log} alt="" width={140} height={140} />
+      <footer class="footer-sec">
+        <div class="main">
+          <div class="footerLogo row">
+            <div class="footer-header">
+              <img src={logo} class="manik" alt="" />
             </div>
-            <div className="brandname">
-              Urban
-              <br /> Garden
+            <div class="logo-des">
+              <p>
+                We offer a wide range of standout features to maintain the
+                convenience to our customers.
+              </p>
             </div>
           </div>
-          <div className="field">
-            <div className="tagline">
-              <h2>
-                <i>#TAGLINE</i>
-              </h2>
+
+          <div class="link row">
+            <div class="footer-header">
+              <h3>Links</h3>
             </div>
-            <div className="headingfield">
-              <h2>STAY CONNECTED </h2>
+            <div class="link-des">
+              <a href="#" class="footer-links">
+                About Us
+              </a>
+              <a href="#" class="footer-links">
+                Categories
+              </a>
+              <a href="#" class="footer-links">
+                How to Trade
+              </a>
+              <a href="#" class="footer-links">
+                Contact
+              </a>
             </div>
-            <div className="form__group field">
-              <div className="combine">
-                <input
-                  required=""
-                  placeholder="Name"
-                  className="form__field"
-                  type="input"
-                />
-                <label className="form__label" htmlFor="name">
-                  Query
-                </label>
+          </div>
+
+          <div class="link row">
+            <div class="footer-header">
+              <h3>Categories</h3>
+            </div>
+
+            <div class="link-des">
+              <a href="#" class="footer-links">
+                Gardening
+              </a>
+              <a href="#" class="footer-links">
+                Plants
+              </a>
+              <a href="#" class="footer-links">
+                Seeds
+              </a>
+              <a href="#" class="footer-links">
+                Bulbs
+              </a>
+              <a href="#" class="footer-links">
+                Pots
+              </a>
+            </div>
+          </div>
+          
+
+          <div class="newsletter row">
+            <div class="footer-header">
+              <h3>Newsletter</h3>
+            </div>
+            <div class="newsletter-des">
+              <div class="subcribe">
+                <i class="sub-icon ri-mail-check-fill"></i>
+                <input type="mail" placeholder="Enter Email ID" required />
+                <i class="sub-icon ri-arrow-right-line"></i>
               </div>
-              <div className="submit">
-                <button className='buttonn'>
-                  <div className="svg-wrapper-1">
-                    <div className="svg-wrapper">
-                      <svg
-                        height="20"
-                        width="20"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path
-                          d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
-                          fill="currentColor"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <span>Send</span>
-                </button>
+              <div class="icons">
+                <a href="#">
+                  <i class="social-icon ri-facebook-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="social-icon ri-instagram-line"></i>
+                </a>
+                <a href="#">
+                  <i class="social-icon ri-linkedin-fill"></i>
+                </a>
+                <a href="#">
+                  <i class="social-icon ri-github-line"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="footer-bottom">
-          <div className="branddesc">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Inventore exercitationem eum dolores beatae aut quisquam qui odit
-              laboriosam consectetur nihil! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, iure!
-            </p>
-          </div>
-          <div className="menulist">
-            <div className="list">
-                <a href="">About Us</a>
-                <a href="">Categories</a>
-                <a href="">How to Trade</a>
-                <a href="">Contact Us</a>    
-            </div>
-            <div className="list">
-                <a href="">Gardening</a>
-                <a href="">Plants</a>
-                <a href="">Seeds</a>
-                <a href="">Bulbs</a>  
-            </div>
-            <div className="list">
-                <a href="">Pots</a>
-                <a href="">Pebbles</a>
-                <a href="">Soil & Fertlizer</a>
-                <a href="">Accessories</a>  
-            </div>
-          </div>
-          <div className="subscribe">
-          <h1>Get in Touch</h1>
-          <div className="icons">
-                <FaFacebook/>
-                <FaTwitter/>
-                <FaInstagram/>
-                <FaGithub/>
-                </div>
-          </div>
+        <div class="copyright">
+          <hr />
+
+          <p>© Copyright 2024 UrbanGarden.</p>
         </div>
       </footer>
     </>

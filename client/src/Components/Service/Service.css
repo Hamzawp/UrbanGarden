@@ -1,23 +1,23 @@
-
 /* Service Section */
 
-.services_container{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: rgb(248 248 248);
-    margin-bottom: 5%;
+.services_container {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(248 248 248);
+  margin-bottom: 5%;
 }
-.service{
-    padding: 25px;
-    text-align: center;
+.service {
+  padding: 25px;
+  text-align: center;
 }
-.service_icon{
-    font-size: 75px;
-    color: #41403e;
+.service_icon {
+  font-size: 75px;
+  color: #41403e;
 }
-.service_text h3{
-    font-weight: 300;
+.service_text h3 {
+  font-weight: 300;
 }
 /* Service Section Ends */

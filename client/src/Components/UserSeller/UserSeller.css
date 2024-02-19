@@ -1,260 +1,197 @@
-#Usercontainer {
-  width: 95%;
-  max-width: 1024px;
-  height: 600px;
+.userSellercontainer {
+  display: grid;
+  place-items: center;
+  height: auto;
+  margin-top: 5em;
+}
+
+.userSellercontainer .box {
   position: relative;
-  border-radius: 20px;
-  /* box-shadow: 0 14px 28px -10px rgba(0, 0, 0, 0.1), 0 10px 10px -10px rgba(0, 0, 0, 0.02); */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;  
-  transform-style: preserve-3d;
-  margin-left: 15%;
-  margin-top: 5%;
-}
-#Usercontainer > div {
-  position: absolute;
-  width: 50%;
-  min-width: 350px;
-  height: 100%;
-  top: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-}
-
-#Usercontainer .content {
   width: 100%;
-  padding: 2em 4em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  max-width: 75vw;
+  padding: 220px 20px 20px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
-#Usercontainer .content p {
-  font-size: 1.4em;
+@media (min-width: 768px) {
+  .userSellercontainer .box {
+    min-height: 75vh;
+    padding: 0;
+  }
+  .box__toggle:checked + .box__image {
+    left: 38vw;
+  }
 }
-
-.User {
+@media (max-width: 840px) {
+  .userSellercontainer .box {
+    min-height: 50vh;
+    padding: 0;
+  }
+  .userSellercontainer {
+    display: grid;
+    place-items: center;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .box__toggle:checked ~ .form--register {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+  .box__toggle:checked ~ .form--login {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+}
+.box__image {
+  position: absolute;
+  top: 0;
   left: 0;
-  background: #FAFAFA;
-  border-radius: 20px 0 0 20px;
-}
-.User button {
-    margin-top: 25px;
-    /* width: 50%; */
-    
-    margin-top: 25px;
-}
-.User .content img{
-  width: 300px;
-  height: 300px;
-  border-radius: 5px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin-bottom: 15px;
-}
-
-.Seller {
-  right: 0;
   z-index: 1;
-  border-radius: 0 20px 20px 0;
-  background: #FAFAFA;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0 bottom;
+  transition: 0.4s ease-in-out;
 }
-.Seller .content button {
-  /* border-radius: 0px; */
-  /* width: 50%; */
-  margin-top: 25px;
+@media (min-width: 768px) {
+  .box__image {
+    width: 37.5vw;
+    height: 100%;
+    object-position: 0 0;
+  }
 }
-.Seller svg {
-  margin: 1em;
-  stroke: #999;
+
+.userSellercontainer .form {
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  transition: 0.3s;
 }
-.Seller .content img{
-  width: 300px;
-  height: 300px;
-  border-radius: 5px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+@media (min-width: 768px) {
+  .userSellercontainer .form {
+    /* width: 300px; */
+    padding: 0 20px;
+  }
+}
+.form__title {
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.form--login {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.form--register {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+@media (min-width: 768px) {
+  .form--register {
+    width: 300px;
+    height: auto;
+    opacity: 1;
+  }
+}
+.form__helper {
+  position: relative;
   margin-bottom: 15px;
 }
-
-
-.page {
-  right: 0;
-  color: #fff;
-  border-radius: 0 20px 20px 0;
-  transform-origin: left center;
-  transition: -webkit-animation 1s linear;
-  transition: animation 1s linear;
-  transition: animation 1s linear, -webkit-animation 1s linear;
+.form__helper:last-of-type {
+  margin-bottom: 0;
 }
-.page p {
-  margin: 2em auto;
+.form__label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  transition: 0.3s;
 }
-.page button{
-  margin-top: 25px;
+.form__input {
+  position: relative;
+  width: 100%;
+  padding: 5px 0;
+  color: black;
+  background-color: transparent;
+  border-width: 0;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
 }
-.front {
-  /* background: linear-gradient(-45deg, #FFCF00 0%, #FC4F4F 100%) no-repeat 0 0/200%; */
-  /* background-color: #a04625; */
-  background-image: url(https://www.gardeningknowhow.com/wp-content/uploads/2019/10/local-nursery.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 3;
+.form__input::placeholder {
+  opacity: 0;
 }
-
-.back {
-  z-index: 2;
-  background-image: url(https://www.stockvault.net/data/2011/04/06/121146/thumb16.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+.form__input:not(:placeholder-shown) + .form__label {
+  bottom: 25px;
+  color: #2e8e79;
+  font-size: 1.2rem;
 }
-.back .content {
-  transform: rotateY(180deg);
+.form__input:focus {
+  border-bottom-color: #2e8e79;
 }
-
-.active .front {
-  -webkit-animation: rot-front 0.6s ease-in-out normal forwards;
-          animation: rot-front 0.6s ease-in-out normal forwards;
+.form__input:focus + .form__label {
+  bottom: 25px;
+  color: #2e8e79;
+  font-size: 1.2rem;
 }
-
-.active .back {
-  -webkit-animation: rot-back 0.6s ease-in-out normal forwards;
-          animation: rot-back 0.6s ease-in-out normal forwards;
+.form__button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  background-color: #2e8e79;
+  border: 0;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
-
-.close .front {
-  -webkit-animation: close-rot-front 0.6s ease-in-out normal forwards;
-          animation: close-rot-front 0.6s ease-in-out normal forwards;
+.form__text {
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
 }
-
-.close .back {
-  -webkit-animation: close-rot-back 0.6s ease-in-out normal forwards;
-          animation: close-rot-back 0.6s ease-in-out normal forwards;
+.form__link {
+  color: #2e8e79;
+  cursor: pointer;
 }
-
-@-webkit-keyframes rot-front {
-  from {
-    transform: translateZ(2px) rotateY(0deg);
+@media (max-width: 600px) {
+  .userSellercontainer .form--login  {
+    margin-top: 14em;
+    padding: 10px;
   }
-  to {
-    transform: translateZ(1px) rotateY(-180deg);
+  .userSellercontainer .box {
+    display: block;
+    max-width: 85vw;
   }
-}
-
-@keyframes rot-front {
-  from {
-    transform: translateZ(2px) rotateY(0deg);
+  .form__title {
+    font-size: 1.2rem;
+    text-align: center;
   }
-  to {
-    transform: translateZ(1px) rotateY(-180deg);
+  .form__button {
+    font-size: 1rem;
   }
-}
-@-webkit-keyframes close-rot-front {
-  from {
-    transform: translateZ(1px) rotateY(-180deg);
+  .form__text {
+    font-size: 1rem;
+    text-align: center;
   }
-  to {
-    transform: translateZ(2px) rotateY(0deg);
-  }
-}
-@keyframes close-rot-front {
-  from {
-    transform: translateZ(1px) rotateY(-180deg);
-  }
-  to {
-    transform: translateZ(2px) rotateY(0deg);
-  }
-}
-@-webkit-keyframes rot-back {
-  from {
-    transform: translateZ(1px) rotateY(0deg);
-  }
-  to {
-    transform: translateZ(2px) rotateY(-180deg);
-  }
-}
-@keyframes rot-back {
-  from {
-    transform: translateZ(1px) rotateY(0deg);
-  }
-  to {
-    transform: translateZ(2px) rotateY(-180deg);
-  }
-}
-@-webkit-keyframes close-rot-back {
-  from {
-    transform: translateZ(2px) rotateY(-180deg);
-  }
-  to {
-    transform: translateZ(1px) rotateY(0deg);
-  }
-}
-@keyframes close-rot-back {
-  from {
-    transform: translateZ(2px) rotateY(-180deg);
-  }
-  to {
-    transform: translateZ(1px) rotateY(0deg);
-  }
-}
-.active .register .content {
-  -webkit-animation: show 0.7s ease-in-out normal forwards;
-          animation: show 0.7s ease-in-out normal forwards;
-}
-
-.close .register .content {
-  -webkit-animation: hide 0.7s ease-in-out normal forwards;
-          animation: hide 0.7s ease-in-out normal forwards;
-}
-
-.active .login .content {
-  -webkit-animation: hide 0.7s ease-in-out normal forwards;
-          animation: hide 0.7s ease-in-out normal forwards;
-}
-
-.close .login .content {
-  -webkit-animation: show 0.7s ease-in-out normal forwards;
-          animation: show 0.7s ease-in-out normal forwards;
-}
-
-@-webkit-keyframes show {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 0.99;
-    transform: scale(0.99);
-  }
-}
-
-@keyframes show {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 0.99;
-    transform: scale(0.99);
-  }
-}
-@-webkit-keyframes hide {
-  from {
-    opacity: 0.99;
-    transform: scale(0.99);
-  }
-  to {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-}
-@keyframes hide {
-  from {
-    opacity: 0.99;
-    transform: scale(0.99);
-  }
-  to {
-    opacity: 0;
-    transform: scale(0.8);
+  .box__toggle:checked ~ .form--register {
+    margin-top: 14em;
   }
 }
