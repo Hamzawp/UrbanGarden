@@ -26,10 +26,9 @@
 }
 .infoProductLayout {
   width: 50%;
-  padding: 50px 10px;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
-  /* row-gap: 1.2rem; */
 }
 .headingProduct {
   line-height: 40px;
@@ -433,4 +432,70 @@
   padding: 5px 25px;
   text-align: justify;
   line-height: 1.5em;
+}
+
+@media (max-width: 1024px) {
+  .outerLayout {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+  .imageProductLayout {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #MainImg {
+    height: 30vh;
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+  }
+  .infoProductLayout {
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .outerLayout {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+  .sizeProduct,
+  .sunlightProduct,
+  .waterProduct {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    padding-left: 2rem;
+    padding: 10px 5px;
+  }
+  .buttonsProduct {
+    display: flex;
+    margin-top: 2rem;
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    align-items: start;
+  }
+  .dimenProduct {
+    width: 15em;
+    height: 3em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .filterbuttonsPopup {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    /* padding: 10px 20px; */
+  }
 }

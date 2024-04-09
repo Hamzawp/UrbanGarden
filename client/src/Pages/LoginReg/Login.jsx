@@ -19,7 +19,7 @@ function Login() {
         <div className='LoignDiv'>
             <div className="login">
                 <div className="image">
-                    <img src="https://images.unsplash.com/photo-1625321643039-ed4aa7f9ceeb?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzMjgxMjM5OQ&ixlib=rb-1.2.1&q=85" alt="" />
+                    <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1696405394-plant-pot-stand-651d1780a4081.png?crop=1.00xw:0.856xh;0,0.0792xh&resize=980:*  " alt="" />
                 </div>
                 <div className="details">
                     <h1 className="title">Log in</h1>

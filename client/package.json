@@ -18,6 +18,7 @@
     "js-cookie": "^3.0.1",
     "material-ui-popup-state": "^5.0.7",
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.2.8",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-multi-carousel": "^2.8.2",
@@ -29,6 +30,7 @@
     "redux": "^4.2.1",
     "redux-persist": "^6.0.0",
     "styled-components": "^5.3.8",
+    "swiper": "^11.0.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

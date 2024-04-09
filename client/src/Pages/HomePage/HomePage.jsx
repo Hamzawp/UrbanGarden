@@ -49,10 +49,10 @@ const HomePage = () => {
       {/* TRENDING  */}
 
       {/* NEW_ARRIVALS  */}
-      <div className="Bestsellers" style={{ textAlign: "left", padding: "5px 0 0 0" }}>
+      {/* <div className="Bestsellers" style={{ textAlign: "left", padding: "5px 0 0 0" }}>
         <h2 style={{ padding: "0px 0 0 40px", fontSize: "1.8rem" }}>NEW ARRIVALS <FaAngleDoubleRight style={{ paddingTop: "8px" }} /></h2>
         <ProductSlider />
-      </div>
+      </div> */}
       {user && <div className="Bestsellers" style={{ textAlign: "left", padding: "5px 0 0 0" }}>
         <h2 style={{ padding: "0px 0 0 40px", fontSize: "1.8rem" }}>Discover Products Near You <FaAngleDoubleRight style={{ paddingTop: "8px" }} /></h2>
         <CityBasedSlider city={"Badlapur"} />

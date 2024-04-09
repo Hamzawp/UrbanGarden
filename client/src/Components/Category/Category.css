@@ -2,14 +2,14 @@
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
-  --font-sans: "Rubik", sans-serif;
-  --font-serif: "Cardo", serif;
 }
 .category_section {
   width: 100vw;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
 }
 .category_section h1 {
   text-align: center;
@@ -21,27 +21,36 @@
   display: grid;
   grid-gap: 2rem;
   padding: 1rem;
-  max-width: 1024px;
-  margin: 20px 100px;
   font-family: var(--font-sans);
 }
-@media (min-width: 600px) {
-  .page-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 800px) {
+
+
+@media (min-width: 1400px) {
   .page-content {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
+@media (max-width: 1370px) {
+  .page-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 840px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .CategoryCard {
   position: relative;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  /* padding: 1rem; */
+  padding: 1rem 2rem;
   width: 300px;
   text-align: center;
   color: whitesmoke;
@@ -53,7 +62,7 @@
 }
 @media (min-width: 600px) {
   .CategoryCard {
-    height: 350px;
+    height: 20em;
   }
 }
 .CategoryCard:before {

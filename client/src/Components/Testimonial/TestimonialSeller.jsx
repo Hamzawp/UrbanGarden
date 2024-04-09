@@ -52,7 +52,7 @@ const TestimonialSeller = (props) => {
   };
 
   return (
-    <>
+    <div className="Testi_headCont">
       <h1 className="Testi_head">What Our Client Says About Us</h1>
       <main>
         <div className="slider">
@@ -78,7 +78,7 @@ const TestimonialSeller = (props) => {
           ))}
         </div>
       </main>
-    </>
+    </div>
   );
 };
 

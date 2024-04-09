@@ -1,4 +1,4 @@
-html body main { 
+.Testi_headCont main {
   width: 100%;
   max-width: 1440px;
   padding: 16px;
@@ -7,16 +7,16 @@ html body main {
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
-.Testi_head{
-    font-size: 40px;
-    text-align: center;
-    color: #41403e;
-    margin-top: 10%;
-    text-transform: uppercase;
+.Testi_head {
+  font-size: 40px;
+  text-align: center;
+  color: #41403e;
+  margin-top: 10%;
+  text-transform: uppercase;
 }
-html body main .slider .buttons {
+.Testi_headCont main .slider .buttons {
   z-index: 1;
   right: 50%;
   top: 261px;
@@ -25,10 +25,10 @@ html body main .slider .buttons {
   position: absolute;
   border-radius: 50px;
   transform: translateX(50%);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-html body main .slider .buttons .previous,
-html body main .slider .buttons .next {
+.Testi_headCont main .slider .buttons .previous,
+.Testi_headCont main .slider .buttons .next {
   width: 50%;
   height: 100%;
   position: absolute;
@@ -36,21 +36,21 @@ html body main .slider .buttons .next {
   background-position: center;
   cursor: pointer;
 }
-html body main .slider .buttons .previous {
+.Testi_headCont main .slider .buttons .previous {
   left: 0;
   background-image: url("https://alcs-slider.netlify.app/images/icon-prev.svg");
 }
-html body main .slider .buttons .previous:hover {
+.Testi_headCont main .slider .buttons .previous:hover {
   transform: scale(1.25);
 }
-html body main .slider .buttons .next {
+.Testi_headCont main .slider .buttons .next {
   right: 0;
   background-image: url("https://alcs-slider.netlify.app/images/icon-next.svg");
 }
-html body main .slider .buttons .next:hover {
+.Testi_headCont main .slider .buttons .next:hover {
   transform: scale(1.25);
 }
-html body main .slider .slide {
+.Testi_headCont main .slider .slide {
   display: flex;
   margin: 0 auto;
   text-align: center;
@@ -58,29 +58,29 @@ html body main .slider .slide {
   justify-content: center;
   flex-direction: column-reverse;
 }
-html body main .slider .slide .testimonial {
+.Testi_headCont main .slider .slide .testimonial {
   padding: 32px 51px;
   background-size: 60px;
   background-position: top;
   background-repeat: no-repeat;
   background-image: url(https://alcs-slider.netlify.app/images/pattern-quotes.svg);
 }
-html body main .slider .slide .testimonial blockquote {
+.Testi_headCont main .slider .slide .testimonial blockquote {
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
   margin-bottom: 36px;
 }
-html body main .slider .slide .testimonial .author {
+.Testi_headCont main .slider .slide .testimonial .author {
   font-size: 15px;
   font-weight: 700;
 }
-html body main .slider .slide .testimonial .author span {
+.Testi_headCont main .slider .slide .testimonial .author span {
   display: block;
   color: #c1cfba;
   font-weight: 500;
 }
-html body main .slider .slide .slider-img {
+.Testi_headCont main .slider .slide .slider-img {
   width: 100%;
   padding: 30px;
   display: flex;
@@ -92,62 +92,62 @@ html body main .slider .slide .slider-img {
   background-repeat: no-repeat;
   background-image: url(https://alcs-slider.netlify.app/images/pattern-bg.svg);
 }
-html body main .slider .slide .slider-img img {
+.Testi_headCont main .slider .slide .slider-img img {
   width: 240px;
   display: block;
   border-radius: 10px;
   box-shadow: 0px 16px 40px 0px rgba(105, 210, 156, 0.4);
 }
-html body main .slider .slide .active {
+.Testi_headCont main .slider .slide .active {
   opacity: 1;
   transform: translateX(0) scale(1);
   transition-delay: 0.4s;
 }
-html body .hide {
+.Testi_headCont .hide {
   display: none;
 }
 
 @media screen and (min-width: 600px) {
-  html body main {
+  .Testi_headCont main {
     max-width: 800px;
   }
-  html body main .slider .buttons {
+  .Testi_headCont main .slider .buttons {
     top: 280px;
   }
 }
 @media screen and (min-width: 900px) {
-  html body main {
+  .Testi_headCont main {
     width: 100%;
     max-width: 1054px;
     padding: 64px 64px 64px 0;
   }
-  html body main .slider .buttons {
+  .Testi_headCont main .slider .buttons {
     right: 43%;
     top: 500px;
   }
-  html body main .slider .slide {
+  .Testi_headCont main .slider .slide {
     position: relative;
     text-align: left;
     display: flex;
     flex-direction: row;
   }
-  html body main .slider .slide .testimonial {
+  .Testi_headCont main .slider .slide .testimonial {
     padding: 32px 0 0 0;
     background-size: 80px;
     background-position: 19% -7%;
     transform: translateX(100px);
   }
-  html body main .slider .slide .testimonial blockquote {
+  .Testi_headCont main .slider .slide .testimonial blockquote {
     font-size: 24px;
     line-height: 30px;
   }
-  html body main .slider .slide .testimonial .author span {
+  .Testi_headCont main .slider .slide .testimonial .author span {
     display: contents;
   }
-  html body main .slider .slide .slider-img {
+  .Testi_headCont main .slider .slide .slider-img {
     padding: 55px;
   }
-  html body main .slider .slide .slider-img img {
+  .Testi_headCont main .slider .slide .slider-img img {
     width: 400px;
   }
 }

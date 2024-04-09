@@ -11,6 +11,7 @@ import SingleCategoryPage from './Pages/HomePage/SingleCategoryPage';
 import AddProductControl from './Pages/AddProductDetails/AddProductControl';
 import AddtoCartPage from './Pages/AddtoCartPage/AddtoCartPage'
 import { useSelector } from 'react-redux';
+import './App.css';
 
 function App() {
   const user = useSelector((state) => state.user.currentUser);
