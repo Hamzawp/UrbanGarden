@@ -10,7 +10,7 @@ COPY . .
 
 ENV PORT=8800
 ENV JWT="8hEnPGeoBqGUT6zksxt4G95gW+uMdzwe7EVaRnp0xRI="
-ENV MONGO_URL="mongodb+srv://Hamza:Hamza@project1.h2qskvb.mongodb.net/UrbanGarden?retryWrites=true&w=majority"
+ENV MONGO_URL="mongouri"
 
 EXPOSE 8800
 
