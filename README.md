@@ -248,4 +248,4 @@ server
 
 ## License 📜
 
-[GPU License](https://github.com/Hamzawp/UrbanGarden/blob/master/LICENSE.txt)
+[GNUv3 License](https://github.com/Hamzawp/UrbanGarden/blob/master/LICENSE.txt)
